@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Cargo Build",
+            "type": "shell",
+            "command": "\"C:/Users/Flamgop/.cargo/bin/cargo.exe\" build --target x86_64-stillalive.json; \"C:/Users/Flamgop/.cargo/bin/cargo.exe\" +nightly bootimage",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "Cargo Run",
+            "type": "shell",
+            "command": "\"C:/Users/Flamgop/.cargo/bin/cargo.exe\" run --target x86_64-stillalive.json",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        }
+    ]
+}
